@@ -1,0 +1,102 @@
+@font-face {
+    font-family: GT;
+    src: url(./Assets/Font/GTWalsheimPro-Medium.ttf);
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        display: flex;
+        height: auto;
+        width: 100% !important;
+    }
+}
+
+html {
+    display: flex;
+    height: auto;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+*, ***, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    all: unset;
+}
+
+body, button, input, optgroup, select, textarea {
+    font-family: GT, Inter, Inter Placeholder, sans-serif !important;
+}
+
+.root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.categoria {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+.categoria h3.title {
+    left: 0;
+    position: relative;
+    margin: 0;
+    padding: 10px;
+}
+
+.categoria p.subtitle {
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.divider {
+    margin: 0 10px 10px 10px;
+    height: 2px;
+    width: 100%;
+    background-color: rgba(204, 204, 204, 0.274);
+}
+
+.container:not(.is-max-desktop):not(.is-max-widescreen),
+.container {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.columns.is-multiline.is-5 {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
+    gap: 5px; 
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-basis: calc(20% - 5px);
+}
+
+.columns:active > .column:not(:active),
+.columns:focus > .column:not(:focus) {
+    filter: grayscale(1);
+}
